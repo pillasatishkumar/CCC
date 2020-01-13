@@ -1,0 +1,475 @@
+{
+  "workflow": {
+    "unique_name": "definition_workflow_01CXXT68FPEPL5OmENLu3CyWCZ4FaVU30zi",
+    "name": "SNOW_CMDB_CIs",
+    "title": "SNOW_CMDB_CIs",
+    "type": "generic.workflow",
+    "base_type": "workflow",
+    "variables": [
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "CC_RUN_ID",
+          "type": "datatype.string",
+          "is_required": false
+        },
+        "unique_name": "variable_workflow_01CXXT72AFORY7Rcusqttnp8l1sTcPVOhXu",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "output",
+          "name": "WF_ID",
+          "type": "datatype.string",
+          "is_required": false
+        },
+        "unique_name": "variable_workflow_01CXXT72AFS4W2lEzq8HgQPUcxj7PlZpMvY",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "app_profile",
+          "scope": "input",
+          "name": "RESOURCE_TYPE",
+          "type": "datatype.string",
+          "is_required": false
+        },
+        "unique_name": "variable_workflow_01CXXT72AFIV829azIrrQmhLDuqyXz5i75K",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "on_demand",
+          "scope": "input",
+          "name": "AVAILABILITY_TYPE",
+          "type": "datatype.string",
+          "is_required": false
+        },
+        "unique_name": "variable_workflow_01CXXT72AFL9O2A2kft2UQby0PvOPCANiMN",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "APP_NAME",
+          "type": "datatype.string",
+          "is_required": false
+        },
+        "unique_name": "variable_workflow_01CXXT72AFPW44LfQ0nnNupAg7GoPHw5X5W",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "local",
+          "name": "Create WF Response",
+          "type": "datatype.string",
+          "is_required": false
+        },
+        "unique_name": "variable_workflow_01CXXT72AFHOB7BqD84hvy7NkUdkrdWJvHg",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "input",
+          "name": "VM_ID",
+          "type": "datatype.integer",
+          "is_required": false
+        },
+        "unique_name": "variable_workflow_01CXXT72AFMF41MK8sro6qdQtbJ4iUjhnrW",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "e72c86a0db100010afb4a08a489619827a49c7e76c471d125fdd40748b0302f6ba12649e",
+          "scope": "input",
+          "name": "UserAgentSecureCode",
+          "type": "datatype.string",
+          "is_required": true
+        },
+        "unique_name": "variable_workflow_01CXXT72AFNLQ6EgOWcJOybq87W0HfMDozY",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "input",
+          "name": "Disk Size",
+          "type": "datatype.integer",
+          "is_required": false
+        },
+        "unique_name": "variable_workflow_01CXXT72AFR0B6R5yC8Eh7wF0kEzTw2FfJf",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "input",
+          "name": "NoOfDisks",
+          "type": "datatype.integer",
+          "is_required": false
+        },
+        "unique_name": "variable_workflow_01CXXT72AFK2P19IZzzDBF7fj3rmVw9ybzA",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.string",
+        "properties": {
+          "value": "",
+          "scope": "input",
+          "name": "APP_ID",
+          "type": "datatype.string",
+          "is_required": false
+        },
+        "unique_name": "variable_workflow_01CXXT72AFC746z6rfp5K4Cv5cQhxweiHxZ",
+        "object_type": "variable_workflow"
+      },
+      {
+        "schema_id": "datatype.integer",
+        "properties": {
+          "value": 0,
+          "scope": "input",
+          "name": "Instance_ID",
+          "type": "datatype.integer",
+          "is_required": false
+        },
+        "unique_name": "variable_workflow_01CXXT72AFGBJ4zkmjac6OoYVjTmmxbaoxb",
+        "object_type": "variable_workflow"
+      }
+    ],
+    "properties": {
+      "atomic": {
+        "is_atomic": false
+      },
+      "delete_workflow_instance": false,
+      "depends_on": "CC",
+      "display_name": "SNOW_CMDB_CIs",
+      "runtime_user": {
+        "override_target_runtime_user": false,
+        "specify_on_workflow_start": false,
+        "target_default": true
+      },
+      "target": {
+        "execute_on_target_group": false,
+        "execute_on_workflow_target": false,
+        "no_target": true,
+        "specify_on_workflow_start": false
+      }
+    },
+    "object_type": "definition_workflow",
+    "actions": [
+      {
+        "unique_name": "definition_activity_01CXXT7BO3V0M6Yb7Ng2AU3E0BQjWaIE6r7",
+        "name": "Get Workload Manager Context",
+        "title": "Get Workload Manager Context",
+        "type": "ccs.get_cloud_context",
+        "base_type": "activity",
+        "properties": {
+          "action_id": "53",
+          "action_timeout": 180,
+          "cc_configuration": {
+            "execute_action": "external",
+            "reboot_vm": false,
+            "resource_mappings": [
+              {
+                "applied_to": {
+                  "app_ids": [
+                    {
+                      "id": "31",
+                      "name": "Satish_SNOW_Integration"
+                    }
+                  ]
+                },
+                "resource_type": "app_profile"
+              }
+            ],
+            "sync_vm": false,
+            "wf_availability_type": "lifecycle"
+          },
+          "cc_run_id": "$workflow.definition_workflow_01CXXT68FPEPL5OmENLu3CyWCZ4FaVU30zi.input.variable_workflow_01CXXT72AFORY7Rcusqttnp8l1sTcPVOhXu$",
+          "continue_on_failure": false,
+          "display_name": "Get Workload Manager Context",
+          "runtime_user": {
+            "override_target_runtime_user": false,
+            "target_default": true
+          },
+          "skip_execution": false,
+          "target": {
+            "override_workflow_target": true,
+            "target_id": "definition_target_01f9IQgvQRJv3tvlqwR145Bbrye0toH0Q"
+          }
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_01CXXT7LV6KFK2g0EdrV5AK7otITjXqmbx0",
+        "name": "JSONPath Query",
+        "title": "JSONPath Query",
+        "type": "corejava.jsonpathquery",
+        "base_type": "activity",
+        "properties": {
+          "action_timeout": 180,
+          "continue_on_failure": false,
+          "display_name": "JSONPath Query",
+          "input_json": "$activity.definition_activity_01CXXT7BO3V0M6Yb7Ng2AU3E0BQjWaIE6r7.output.response_body$",
+          "jsonpath_queries": [
+            {
+              "jsonpath_query": "$.virtualMachines[*].privateIpAddr",
+              "jsonpath_query_name": "privateipaddr",
+              "jsonpath_query_type": "string"
+            },
+            {
+              "jsonpath_query": "$.virtualMachines[*].hostName",
+              "jsonpath_query_name": "hostname",
+              "jsonpath_query_type": "string"
+            },
+            {
+              "jsonpath_query": "$.virtualMachines[*].virtualMachineId",
+              "jsonpath_query_name": "virtualmachineid",
+              "jsonpath_query_type": "string"
+            },
+            {
+              "jsonpath_query": "$.virtualMachines[*].status",
+              "jsonpath_query_name": "status",
+              "jsonpath_query_type": "string"
+            },
+            {
+              "jsonpath_query": "$.virtualMachines[*].nodeSpecs.osType",
+              "jsonpath_query_name": "ostype",
+              "jsonpath_query_type": "string"
+            },
+            {
+              "jsonpath_query": " $.virtualMachines[*].nodeSpecs.memorySize",
+              "jsonpath_query_name": "memorysize",
+              "jsonpath_query_type": "string"
+            }
+          ],
+          "skip_execution": false
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_01CXXT7W2PXR62kARndVvHacHsSsWpLph69",
+        "name": "HTTP Request",
+        "title": "Create A CI Record",
+        "type": "web-service.http_request",
+        "base_type": "activity",
+        "properties": {
+          "accept": "application/json",
+          "action_timeout": 180,
+          "allow_auto_redirect": true,
+          "body": "{\n  \"sys_id\": \"$activity.definition_activity_01CXXT7LV6KFK2g0EdrV5AK7otITjXqmbx0.output.jsonpath_queries.virtualmachineid$\",\n  \"vm_inst_id\": \"$activity.definition_activity_01CXXT7LV6KFK2g0EdrV5AK7otITjXqmbx0.output.jsonpath_queries.virtualmachineid$\",\n  \"fqdn\": \"$activity.definition_activity_01CXXT7LV6KFK2g0EdrV5AK7otITjXqmbx0.output.jsonpath_queries.hostname$\",\n  \"name\": \"$activity.definition_activity_01CXXT7LV6KFK2g0EdrV5AK7otITjXqmbx0.output.jsonpath_queries.hostname$\",\n  \"server\": \"$activity.definition_activity_01CXXT7LV6KFK2g0EdrV5AK7otITjXqmbx0.output.jsonpath_queries.hostname$\",\n  \"memory\": \"$activity.definition_activity_01CXXT7LV6KFK2g0EdrV5AK7otITjXqmbx0.output.jsonpath_queries.memorysize$\",\n  \"disks\": \"$workflow.definition_workflow_01CXXT68FPEPL5OmENLu3CyWCZ4FaVU30zi.input.variable_workflow_01CXXT72AFK2P19IZzzDBF7fj3rmVw9ybzA$\",\n  \"disks_size\": \"$workflow.definition_workflow_01CXXT68FPEPL5OmENLu3CyWCZ4FaVU30zi.input.variable_workflow_01CXXT72AFR0B6R5yC8Eh7wF0kEzTw2FfJf$\",\n  \"ip_address\": \"$activity.definition_activity_01CXXT7LV6KFK2g0EdrV5AK7otITjXqmbx0.output.jsonpath_queries.privateipaddr$\"\n}",
+          "content_type": "application/json",
+          "continue_on_error_status_code": false,
+          "continue_on_failure": false,
+          "custom_headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "display_name": "Create A CI Record",
+          "method": "POST",
+          "relative_url": "cmdb_ci_vm_instance?sysparm_fields=sys_created_on%3D%2Cvm_inst_id%2Cfqdn%2Cinstall_status%2Cname%2Cserver%2Cmemory%2Cdisks%2Csys_id%2Cip_address",
+          "runtime_user": {
+            "override_target_runtime_user": false,
+            "target_default": true
+          },
+          "skip_execution": false,
+          "target": {
+            "override_workflow_target": true,
+            "target_id": "definition_target_01AHIU993F18K2GRxzgD2QRvm2QaGmqcQeF"
+          },
+          "user_agent": "$workflow.definition_workflow_01CXXT68FPEPL5OmENLu3CyWCZ4FaVU30zi.input.variable_workflow_01CXXT72AFNLQ6EgOWcJOybq87W0HfMDozY$"
+        },
+        "object_type": "definition_activity"
+      },
+      {
+        "unique_name": "definition_activity_01CXXT8B3ULUB2UPd8TWYFk21mGvR9DqGe9",
+        "name": "Condition Block",
+        "title": "Condition Block",
+        "type": "logic.if_else",
+        "base_type": "activity",
+        "properties": {
+          "continue_on_failure": false,
+          "display_name": "Condition Block",
+          "skip_execution": false
+        },
+        "object_type": "definition_activity",
+        "blocks": [
+          {
+            "unique_name": "definition_activity_01CXXT8HJSHNI2ycOaMhyjmzdHZcSMa8tJV",
+            "name": "Condition Branch",
+            "title": "Condition Branch",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "condition": {
+                "left_operand": {
+                  "left_operand": "$activity.definition_activity_01CXXT7W2PXR62kARndVvHacHsSsWpLph69.output.succeeded$",
+                  "operator": "eq",
+                  "right_operand": false
+                },
+                "operator": "or",
+                "right_operand": {
+                  "left_operand": "$activity.definition_activity_01CXXT7W2PXR62kARndVvHacHsSsWpLph69.output.status_code$",
+                  "operator": "ne",
+                  "right_operand": 201
+                }
+              },
+              "continue_on_failure": false,
+              "display_name": "Condition Branch",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_01CXXT8P7OX8406YM69xmIi7w2jdz7cqLBU",
+                "name": "Failed",
+                "title": "Completed",
+                "type": "logic.completed",
+                "base_type": "activity",
+                "properties": {
+                  "completion_type": "failed-completed",
+                  "display_name": "Failed"
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          },
+          {
+            "unique_name": "definition_activity_01CXXT8WBEHQC6bu65Lot76j4pqCB1IDBvP",
+            "name": "Condition Branch",
+            "title": "Condition Branch",
+            "type": "logic.condition_block",
+            "base_type": "activity",
+            "properties": {
+              "condition": {
+                "left_operand": {
+                  "left_operand": "$activity.definition_activity_01CXXT7W2PXR62kARndVvHacHsSsWpLph69.output.status_code$",
+                  "operator": "eq",
+                  "right_operand": 201
+                },
+                "operator": "and",
+                "right_operand": {
+                  "left_operand": "$activity.definition_activity_01CXXT7W2PXR62kARndVvHacHsSsWpLph69.output.succeeded$",
+                  "operator": "eq",
+                  "right_operand": true
+                }
+              },
+              "continue_on_failure": false,
+              "display_name": "Condition Branch",
+              "skip_execution": false
+            },
+            "object_type": "definition_activity",
+            "actions": [
+              {
+                "unique_name": "definition_activity_01CXXT96WU7AT6Cx9uylqMDQKblRqQ4h036",
+                "name": "Sleep",
+                "title": "Wait",
+                "type": "core.sleep",
+                "base_type": "activity",
+                "properties": {
+                  "continue_on_failure": false,
+                  "display_name": "Wait",
+                  "skip_execution": false,
+                  "sleep_interval": 10
+                },
+                "object_type": "definition_activity"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "unique_name": "definition_activity_01CXXT9F4F18P5L74wnfjMQt3I5UA8u5iJm",
+        "name": "HTTP Request",
+        "title": "Get CI Details",
+        "type": "web-service.http_request",
+        "base_type": "activity",
+        "properties": {
+          "accept": "application/json",
+          "action_timeout": 180,
+          "allow_auto_redirect": true,
+          "content_type": "application/json",
+          "continue_on_error_status_code": false,
+          "continue_on_failure": false,
+          "custom_headers": [
+            {
+              "name": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "display_name": "Get CI Details",
+          "method": "GET",
+          "relative_url": "cmdb_ci_vm_instance?sysparm_query=vm_inst_id%3D$activity.definition_activity_01CXXT7LV6KFK2g0EdrV5AK7otITjXqmbx0.output.jsonpath_queries.virtualmachineid$",
+          "runtime_user": {
+            "override_target_runtime_user": false,
+            "target_default": true
+          },
+          "skip_execution": false,
+          "target": {
+            "override_workflow_target": true,
+            "target_id": "definition_target_01AHIU993F18K2GRxzgD2QRvm2QaGmqcQeF"
+          },
+          "user_agent": "e72c86a0db100010afb4a08a489619827a49c7e76c471d125fdd40748b0302f6ba12649e"
+        },
+        "object_type": "definition_activity"
+      }
+    ],
+    "categories": [
+      "category_1BMfMXSnJMyt5Ihqi7rWJr5N8cf"
+    ]
+  },
+  "targets": {
+    "definition_target_01AHIU993F18K2GRxzgD2QRvm2QaGmqcQeF": {
+      "unique_name": "definition_target_01AHIU993F18K2GRxzgD2QRvm2QaGmqcQeF",
+      "name": "SNOWInstance",
+      "title": "SNOWInstance",
+      "type": "web-service.endpoint",
+      "base_type": "target",
+      "object_type": "definition_target",
+      "properties": {
+        "default_runtime_user_id": "definition_runtime_user_01AHIU3HA8P8G70M6MZFV7YGlBdGc2da3GC",
+        "disable_certificate_validation": true,
+        "display_name": "SNOWInstance",
+        "host": "dev75248.service-now.com",
+        "no_runtime_user": false,
+        "path": "/api/now/table/",
+        "port": 443,
+        "protocol": "https",
+        "proxy_url": "http://192.168.2.222:3128"
+      }
+    }
+  },
+  "runtime_users": {
+    "definition_runtime_user_01AHIU3HA8P8G70M6MZFV7YGlBdGc2da3GC": {
+      "unique_name": "definition_runtime_user_01AHIU3HA8P8G70M6MZFV7YGlBdGc2da3GC",
+      "name": "SNOWAdminUser",
+      "title": "SNOWAdminUser",
+      "type": "runtime_user.web-service_basic_credentials",
+      "base_type": "runtime_user",
+      "object_type": "definition_runtime_user",
+      "properties": {
+        "auth_option": "*****",
+        "basic_password": "*****",
+        "basic_username": "*****",
+        "display_name": "SNOWAdminUser"
+      }
+    }
+  }
+}
